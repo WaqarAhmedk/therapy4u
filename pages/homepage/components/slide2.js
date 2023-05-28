@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material'
 import React, { useState, useEffect } from 'react'
 import hero2 from '../../../public/hero2.jpg';
 import hero2img from '../../../public/hero2img.png'
+import { Facebook, Twitter, Instagram } from '@material-ui/icons';
 
 import TextTransition, { presets } from 'react-text-transition';
 
@@ -47,13 +48,7 @@ export default function Slide2() {
             }}
         />
 
-        <Box sx={{
-            position: 'absolute',
-            top: '15%',
-            left: '10%'
-        }}>
 
-        </Box>
 
         <Box sx={{
             position: 'absolute',
@@ -100,6 +95,29 @@ export default function Slide2() {
                     {TEXTS[index % TEXTS.length]}
 
                 </TextTransition>
+            </Box>
+            <Box sx={{
+                display: 'flex',
+                marginTop: '20%',
+
+                justifyContent: 'center',
+
+            }}>
+
+
+                <Instagram style={{
+                    color: 'white',
+                    fontSize: '40px'
+                }} />
+                <Facebook style={{
+                    color: 'white',
+                    fontSize: '40px'
+                }} />
+                <Twitter style={{
+                    color: 'white',
+                    fontSize: '40px'
+                }} />
+
             </Box>
         </Box>
 

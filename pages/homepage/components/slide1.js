@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import hero1 from '../../../public/hero1.jpeg'
+import { Facebook, Twitter, Instagram } from '@material-ui/icons';
 
 import Image from 'next/image';
 export default function Slide1() {
@@ -54,7 +55,31 @@ export default function Slide1() {
                 Insight, introspection, self-awareness, healing.
 
             </Typography>
+            <Box sx={{
+                display: 'flex',
+                marginTop: '20%',
+
+                justifyContent: 'center',
+
+            }}>
+
+
+                <Instagram style={{
+                    color: 'white',
+                    fontSize: '40px'
+                }} />
+                <Facebook style={{
+                    color: 'white',
+                    fontSize: '40px'
+                }} />
+                <Twitter style={{
+                    color: 'white',
+                    fontSize: '40px'
+                }} />
+
+            </Box>
 
         </Box>
+
     </Box >)
 }

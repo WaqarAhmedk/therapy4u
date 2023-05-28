@@ -9,9 +9,10 @@ import hero2 from '../../public/hero2.jpg'
 
 import Image from 'next/image';
 import { SlideshowOutlined } from '@material-ui/icons';
-import slide1 from './components/slide1';
 import Slide1 from './components/slide1';
 import Slide2 from './components/slide2';
+
+import Slide3 from './components/slide3';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -19,7 +20,8 @@ const slides = [
 
 
     <Slide1 />,
-    <Slide2 />
+    <Slide2 />,
+    <Slide3 />
 
 ];
 
