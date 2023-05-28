@@ -57,10 +57,9 @@ export default function Slide2() {
 
         <Box sx={{
             position: 'absolute',
-            top: {
-                xs: '20%',
-                sm: '30%'
-            },
+
+            top: '30%',
+
             left: '10%'
         }}>
 
