@@ -63,7 +63,7 @@ export default function Slide3() {
             </Box>
             <Box sx={{
                 display: 'flex',
-                marginTop: '20%',
+                marginTop: '10%',
 
                 justifyContent: 'center',
 
@@ -71,15 +71,15 @@ export default function Slide3() {
 
 
                 <Instagram style={{
-                    color: '#8FC4C7',
+                    color: 'white',
                     fontSize: '40px'
                 }} />
                 <Facebook style={{
-                    color: '#8FC4C7',
+                    color: 'white',
                     fontSize: '40px'
                 }} />
                 <Twitter style={{
-                    color: '#8FC4C7',
+                    color: 'white',
                     fontSize: '40px'
                 }} />
 
