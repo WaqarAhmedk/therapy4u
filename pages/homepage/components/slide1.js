@@ -22,7 +22,11 @@ export default function Slide1() {
 
         <Box sx={{
             position: 'absolute',
-            top: '30%',
+            top: {
+                xs: '15%',
+                sm: '30%'
+
+            },
             right: '5%',
         }}>
             <Typography sx={{

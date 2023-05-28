@@ -10,9 +10,9 @@ import Image from 'next/image';
 
 
 const TEXTS = [
-    <Typography sx={{ fontSize: '30px', fontWeight: 'bold', color: 'red' }} >GUIDING MINDS</Typography>,
-    <Typography sx={{ fontSize: '30px', fontWeight: 'bold', color: 'blue' }}>MENDING HEARTS</Typography>,
-    <Typography sx={{ fontSize: '30px', fontWeight: 'bold', color: 'Green' }} >RESTORING INNER HARMONY</Typography>
+    <Typography sx={{ marginTop: '20px', fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'red' }} >GUIDING MINDS</Typography>,
+    <Typography sx={{ marginTop: '20px', fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'blue' }}>MENDING HEARTS</Typography>,
+    <Typography sx={{ marginTop: '20px', fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'Green' }} >SOOTHING SOULS</Typography>
 
 
 ];
@@ -24,7 +24,7 @@ export default function Slide2() {
     React.useEffect(() => {
         const intervalId = setInterval(
             () => setIndex((index) => index + 1),
-            3000, // every 3 seconds
+            1500, // every 3 seconds
         );
         return () => clearTimeout(intervalId);
     }, []);
@@ -52,23 +52,56 @@ export default function Slide2() {
             top: '15%',
             left: '10%'
         }}>
-            <Image src={hero2img} alt='pschyotherpy' style={{
-                height: '80%',
-                display: 'block',
-                width: '85%',
-            }} />
+
         </Box>
 
         <Box sx={{
             position: 'absolute',
-            top: '30%',
-            right: '30%'
+            top: {
+                xs: '20%',
+                sm: '30%'
+            },
+            left: '10%'
         }}>
-            <TextTransition springConfig={presets.wobbly}>
 
-                {TEXTS[index % TEXTS.length]}
 
-            </TextTransition>
+            <Typography sx={{
+                fontSize: {
+                    xs: '40px',
+                    sm: '60px'
+                },
+                fontWeight: '1000',
+                color: '#F3FE04'
+            }}>
+                THERAPY 4U
+            </Typography>
+
+            <Box sx={{
+                marginLeft: {
+                    xs: '0px',
+                    sm: '100px'
+                },
+                display: {
+                    xs: 'block',
+                    sm: 'flex'
+                }
+            }}>
+                <Typography sx={{
+                    fontSize: {
+                        xs: '30px',
+                        sm: '30px'
+                    },
+                    color: '#59687A',
+                    fontWeight: '1000',
+                }}>
+                    HELPS IN
+                </Typography>
+                <TextTransition springConfig={presets.wobbly}>
+
+                    {TEXTS[index % TEXTS.length]}
+
+                </TextTransition>
+            </Box>
         </Box>
 
     </Box>)

@@ -44,7 +44,7 @@ function SwipeableTextMobileStepper() {
                 index={activeStep}
                 onChangeIndex={handleStepChange}
                 enableMouseEvents
-                interval={4000}
+                interval={5000}
 
             >
                 {slides.map((step, index) => (
