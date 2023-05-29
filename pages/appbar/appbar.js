@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Home', 'Services', 'About me', 'Contact & Pricing', 'Experience', 'Team'];
+const pages = ['Home', 'Services', 'About me', 'Contact & Pricing', 'Experience',];
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = useState(null);

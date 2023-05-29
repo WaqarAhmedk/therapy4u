@@ -51,6 +51,7 @@ function SwipeableTextMobileStepper() {
             >
                 {slides.map((step, index) => (
                     <Box key={step.label} sx={{
+                        width: '100%'
                     }}>
                         {Math.abs(activeStep - index) <= 2 ? (
 

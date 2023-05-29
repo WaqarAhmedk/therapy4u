@@ -96,30 +96,35 @@ export default function Slide2() {
 
                 </TextTransition>
             </Box>
-            <Box sx={{
-                display: 'flex',
-                marginTop: '20%',
 
-                justifyContent: 'center',
-
-            }}>
-
-
-                <Instagram style={{
-                    color: 'white',
-                    fontSize: '40px'
-                }} />
-                <Facebook style={{
-                    color: 'white',
-                    fontSize: '40px'
-                }} />
-                <Twitter style={{
-                    color: 'white',
-                    fontSize: '40px'
-                }} />
-
-            </Box>
         </Box>
+        <Box sx={{
+            position: 'absolute',
+            display: 'flex',
+            bottom: '10%',
+            right: {
+                xs: '30%',
+                sm: '10%',
+                md: '8%'
+            },
+            justifyContent: 'center',
 
+        }}>
+
+
+            <Instagram style={{
+                color: 'white',
+                fontSize: '40px'
+            }} />
+            <Facebook style={{
+                color: 'white',
+                fontSize: '40px'
+            }} />
+            <Twitter style={{
+                color: 'white',
+                fontSize: '40px'
+            }} />
+
+        </Box>
     </Box>)
 }

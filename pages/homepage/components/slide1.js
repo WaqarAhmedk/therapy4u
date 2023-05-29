@@ -23,7 +23,10 @@ export default function Slide1() {
 
         <Box sx={{
             position: 'absolute',
-            top: '30%',
+            top: {
+                xs: '20%',
+                sm: '30%'
+            },
             right: '5%',
         }}>
             <Typography sx={{
@@ -40,7 +43,9 @@ export default function Slide1() {
                     color: '#F3FE04',
                     lineHeight: '60px',
                     fontWeight: 1000,
-                    fontSize: '50px',
+                    fontSize: {
+                        xs: '50px'
+                    },
                     textAlign: 'center',
                 }}>
                     WE CAN PUT THEM  <br />IN ORDER TOGETHER

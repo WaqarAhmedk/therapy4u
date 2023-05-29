@@ -12,7 +12,6 @@ export default function HeroSection() {
     }}>
         <ResponsiveAppBar />
         <SwipeableTextMobileStepper style={{
-            position: 'absolute',
         }} />
     </Box>)
 }
