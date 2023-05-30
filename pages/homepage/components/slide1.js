@@ -24,14 +24,17 @@ export default function Slide1() {
         <Box sx={{
             position: 'absolute',
             top: {
-                xs: '20%',
-                sm: '30%'
+                xs: '10%',
+                sm: '15%'
             },
             right: '5%',
         }}>
             <Typography sx={{
                 color: '#59687A',
-                fontSize: '30px',
+                fontSize: {
+                    xs: '20px',
+                    sm: '30px'
+                },
                 fontWeight: 'bold',
                 textAlign: 'center'
             }}>
@@ -41,10 +44,14 @@ export default function Slide1() {
             }}>
                 <Typography sx={{
                     color: '#F3FE04',
-                    lineHeight: '60px',
+                    lineHeight: {
+                        xs: '40px',
+                        sm: '60px'
+                    },
                     fontWeight: 1000,
                     fontSize: {
-                        xs: '50px'
+                        xs: '30px',
+                        sm: '50px'
                     },
                     textAlign: 'center',
                 }}>
@@ -60,29 +67,7 @@ export default function Slide1() {
                 Insight, introspection, self-awareness, healing.
 
             </Typography>
-            <Box sx={{
-                display: 'flex',
-                marginTop: '20%',
 
-                justifyContent: 'center',
-
-            }}>
-
-
-                <Instagram style={{
-                    color: 'white',
-                    fontSize: '40px'
-                }} />
-                <Facebook style={{
-                    color: 'white',
-                    fontSize: '40px'
-                }} />
-                <Twitter style={{
-                    color: 'white',
-                    fontSize: '40px'
-                }} />
-
-            </Box>
 
         </Box>
 

@@ -35,7 +35,10 @@ export default function Slide3() {
         <Box sx={{
             position: 'absolute',
 
-            top: '15%',
+            top: {
+                xs: '6%',
+                sm: '15%'
+            },
 
             left: {
                 xs: '1%',

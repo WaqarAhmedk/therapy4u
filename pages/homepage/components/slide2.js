@@ -11,9 +11,9 @@ import Image from 'next/image';
 
 
 const TEXTS = [
-    <Typography sx={{ marginTop: '20px', fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'red' }} >GUIDING MINDS</Typography>,
-    <Typography sx={{ marginTop: '20px', fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'blue' }}>MENDING HEARTS</Typography>,
-    <Typography sx={{ marginTop: '20px', fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'Green' }} >SOOTHING SOULS</Typography>
+    <Typography sx={{ marginTop: { xs: '10px', sm: '20px' }, fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'red' }} >GUIDING MINDS</Typography>,
+    <Typography sx={{ marginTop: { xs: '10px', sm: '20px' }, fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'blue' }}>MENDING HEARTS</Typography>,
+    <Typography sx={{ marginTop: { xs: '10px', sm: '20px' }, fontSize: { xs: '30px', sm: '40px' }, fontWeight: 'bold', color: 'Green' }} >SOOTHING SOULS</Typography>
 
 
 ];
@@ -38,6 +38,7 @@ export default function Slide2() {
 
     return (<Box sx={{
         position: 'relative',
+        width: '100%'
     }}>
         <Image alt='image slide 1'
             src={hero2}
@@ -53,7 +54,10 @@ export default function Slide2() {
         <Box sx={{
             position: 'absolute',
 
-            top: '30%',
+            top: {
+                xs: '5%',
+                sm: '25%'
+            },
 
             left: '10%'
         }}>
@@ -61,7 +65,7 @@ export default function Slide2() {
 
             <Typography sx={{
                 fontSize: {
-                    xs: '40px',
+                    xs: '30px',
                     sm: '60px'
                 },
                 fontWeight: '1000',
@@ -76,13 +80,12 @@ export default function Slide2() {
                     sm: '100px'
                 },
                 display: {
-                    xs: 'block',
                     sm: 'flex'
                 }
             }}>
                 <Typography sx={{
                     fontSize: {
-                        xs: '30px',
+                        xs: '20px',
                         sm: '30px'
                     },
                     color: '#59687A',
@@ -98,33 +101,6 @@ export default function Slide2() {
             </Box>
 
         </Box>
-        <Box sx={{
-            position: 'absolute',
-            display: 'flex',
-            bottom: '10%',
-            right: {
-                xs: '30%',
-                sm: '10%',
-                md: '8%'
-            },
-            justifyContent: 'center',
 
-        }}>
-
-
-            <Instagram style={{
-                color: 'white',
-                fontSize: '40px'
-            }} />
-            <Facebook style={{
-                color: 'white',
-                fontSize: '40px'
-            }} />
-            <Twitter style={{
-                color: 'white',
-                fontSize: '40px'
-            }} />
-
-        </Box>
     </Box>)
 }

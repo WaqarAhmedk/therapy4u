@@ -8,11 +8,12 @@ import hero1 from '../../public/hero1.jpeg'
 import hero2 from '../../public/hero2.jpg'
 
 import Image from 'next/image';
-import { SlideshowOutlined } from '@material-ui/icons';
+import { FavoriteOutlined, SlideshowOutlined } from '@material-ui/icons';
 import Slide1 from './components/slide1';
 import Slide2 from './components/slide2';
 
 import Slide3 from './components/slide3';
+import { Typography } from '@mui/material';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -39,6 +40,7 @@ function SwipeableTextMobileStepper() {
 
     return (
         <Box sx={{
+            position: 'relative'
         }}>
 
             <AutoPlaySwipeableViews
@@ -68,6 +70,108 @@ function SwipeableTextMobileStepper() {
                     </Box>
                 ))}
             </AutoPlaySwipeableViews>
+
+            <Box sx={{
+                position: 'absolute',
+                bottom: {
+                    xs: '0%',
+                    sm: '5%'
+                },
+                left: '5%',
+                height: {
+                    xs: 'fit-content',
+                    sm: '200px'
+                },
+                right: '15%',
+                background: `rgba(0,0,0, 0.25)`,
+                backdropFilter: `blur(5px)`,
+                width: '90%',
+                display: {
+                    xs: 'block',
+                    sm: 'flex'
+
+                },
+                borderRadius: '20px',
+                justifyContent: 'space-between',
+
+            }}>
+
+                <Box sx={{
+                    padding: '20px'
+                }}>
+                    <Box sx={{
+                        display: {
+                            xs: 'block',
+                            sm: 'flex'
+                        },
+                        alignItems: 'center'
+
+
+                    }}>
+                        <Typography sx={{
+                            fontSize: '30px',
+                            color: 'white',
+                            marginLeft: '10px'
+                        }}>Psychotherapy</Typography>
+                    </Box>
+                    <Typography sx={{
+                        color: 'white',
+                        marginTop: '10px'
+                    }}>
+                        Assessing and diagnosing mental health conditions through detailed interviews, observations, and assessments.
+                    </Typography>
+                </Box>
+                <Box sx={{
+                    padding: '20px'
+                }}>
+                    <Box sx={{
+                        display: 'flex',
+                        alignItems: 'center'
+
+
+                    }}>
+                        <Typography sx={{
+                            fontSize: '30px',
+                            color: 'white',
+                            marginLeft: '10px'
+                        }}>Counseling</Typography>
+                    </Box>
+                    <Typography sx={{
+                        color: 'white',
+                        marginTop: '10px'
+                    }}>
+                        Assessing and diagnosing mental health conditions through detailed interviews, observations, and assessments.
+                    </Typography>
+                </Box>
+                <Box sx={{
+                    backgroundColor: '#26605A',
+                    padding: '20px',
+                    borderTopRightRadius: '20px',
+                    borderBottomRightRadius: '20px'
+
+                }}>
+                    <Box sx={{
+                        display: 'flex',
+                        alignItems: 'center'
+
+
+                    }}>
+                        <Typography sx={{
+                            fontSize: '30px',
+                            color: 'white',
+                            marginLeft: '10px'
+                        }}>Book a Session</Typography>
+                    </Box>
+                    <Typography sx={{
+                        color: 'white',
+                        marginTop: '10px'
+                    }}>
+                        Book a Session with us
+                        Assessing and diagnosing mental health conditions through detailed interviews, observations, and assessments.
+                    </Typography>
+                </Box>
+
+            </Box>
 
         </Box>
     );

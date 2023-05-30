@@ -6,6 +6,7 @@ import AppBarCustom from './appbar/appbar'
 import HeroSection from './homepage/herosection'
 import AbouTmE from './aboutme/aboutme'
 import { Box } from '@mui/material'
+import OurServices from './ourservices/ourservices'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function Home() {
 
       <HeroSection />
       <AbouTmE />
+      <OurServices />
 
 
     </>
